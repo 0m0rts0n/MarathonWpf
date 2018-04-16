@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarathonWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Окно авторизации" Height="200" Width="250">
     <Grid>
-        
+        <GroupBox Header="Авторизация" FontSize="16px">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="LoginTB" HorizontalAlignment="Left" Height="23" Margin="65,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+                <PasswordBox x:Name="PasswordTB" HorizontalAlignment="Left" Height="23" Margin="65,38,0,0" VerticalAlignment="Top" Width="155"/>
+            </Grid>
+        </GroupBox>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="17,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="17,58,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="LoginBtn" Content="Войти" FontSize="24px" Margin="50,105,50,20" Click="LoginBtn_Click" />
+        <!--
+        <Label Content="Логин" Margin="30,35,297,309"/>
+        <TextBox Margin="100,35,22,309"/>
+        <Label Content="Пароль" Margin="30,90,297,244"/>
+        <TextBox Margin="100,90,22,249"></TextBox>
+        <Button Content="Войти" FontSize="24px" Margin="30,145,30,170"></Button>
+        -->
     </Grid>
 </Window>

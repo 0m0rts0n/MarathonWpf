@@ -24,5 +24,17 @@ namespace MarathonWpf
         {
             InitializeComponent();
         }
+
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (LoginTB.Text == "test" && PasswordTB.Password == "test")
+            {
+                RunnersForm rf = new RunnersForm();
+                rf.Show();
+                this.Close();
+            }
+            else
+                MessageBox.Show("Неверный логин/пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
     }
 }
